@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Digitação com Tempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tela inicial -->
+    <div id="intro-container">
+        <h1>Desafio da Digitação!</h1>
+        <p>Você tem 60 segundos para digitar o maior número de palavras corretamente.</p>
+        <p>Digite seu nome para começar:</p>
+        <input type="text" id="player-name" placeholder="Seu nome" />
+        <button id="start-btn">Iniciar Jogo</button>
+    </div>
+
+    <!-- Tela do jogo -->
+    <div id="game-container">
+        <h1>Jogo de Digitação com Tempo</h1>
+        <p id="word-to-type"></p>
+        <input type="text" id="input-text" placeholder="Digite a palavra..." disabled />
+        <p id="timer">Tempo: <span id="time">60</span> segundos</p>
+        <p id="score">Pontuação: <span id="points">0</span></p>
+        <p id="result"></p>
+    </div>
+
+    <!-- Tela do ranking -->
+    <div id="ranking-container">
+        <h2>Ranking dos Melhores Jogadores</h2>
+        <div id="ranking-list">
+            <!-- Ranking será populado aqui -->
+        </div>
+        <button id="back-btn">Voltar para a Tela Inicial</button>
+        <p id="reset-msg">Pressione a tecla "0" para reiniciar o ranking.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
